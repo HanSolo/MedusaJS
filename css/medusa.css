@@ -1,0 +1,110 @@
+/*
+ * Copyright (c) 2015 by Gerrit Grunwald
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+ * Credits to Digital-7 font
+ * Sizenko Alexander
+ * Style-7
+ * http://www.styleseven.com
+ */
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('roboto-regular-webfont.eot');
+    src: url('roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('roboto-regular.woff2') format('woff2'),
+    url('roboto-regular-webfont.woff') format('woff'),
+    url('roboto-regular-webfont.ttf') format('truetype'),
+    url('roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style : normal;
+
+}
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('roboto-thin-webfont.eot');
+    src: url('roboto-thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('roboto-thin.woff2') format('woff2'),
+    url('roboto-thin-webfont.woff') format('woff'),
+    url('roboto-thin-webfont.ttf') format('truetype'),
+    url('roboto-thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style : normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('roboto-light-webfont.eot');
+    src: url('roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('roboto-light.woff2') format('woff2'),
+    url('roboto-light-webfont.woff') format('woff'),
+    url('roboto-light-webfont.ttf') format('truetype'),
+    url('roboto-light-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style : normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('roboto-medium-webfont.eot');
+    src: url('roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('roboto-medium.woff2') format('woff2'),
+    url('roboto-medium-webfont.woff') format('woff'),
+    url('roboto-medium-webfont.ttf') format('truetype'),
+    url('roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style : normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('roboto-bold-webfont.eot');
+    src: url('roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('roboto-bold.woff2') format('woff2'),
+    url('roboto-bold-webfont.woff') format('woff'),
+    url('roboto-bold-webfont.ttf') format('truetype'),
+    url('roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style : normal;
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('lato-lig-webfont.eot');
+    src: url('lato-lig-webfont.eot?#iefix') format('embedded-opentype'),
+    url('lato-lig-webfont.woff2') format('woff2'),
+    url('lato-lig-webfont.woff') format('woff'),
+    url('lato-lig-webfont.ttf') format('truetype'),
+    url('lato-lig-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'digital-7mono';
+    src: url('digital-7_mono-webfont.eot');
+    src: url('digital-7_mono-webfont.eot?#iefix') format('embedded-opentype'),
+    url('digital-7_mono-webfont.woff2') format('woff2'),
+    url('digital-7_mono-webfont.woff') format('woff'),
+    url('digital-7_mono-webfont.ttf') format('truetype'),
+    url('digital-7_mono-webfont.svg#digital-7mono') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

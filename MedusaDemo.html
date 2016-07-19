@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width,
+      initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5" />
+    <title>Medusa</title>
+    <link rel="stylesheet" href="css/medusa.css" type="text/css" charset="utf-8" />
+    <script type='text/javascript' src='js/medusa.js'></script>
+    <script type='text/javascript' src='js/shifty-min.js'></script>
+    <script type='application/javascript'>
+        var dashboardParameters = {
+            id                     : 'dashboardGauge',
+            parentId               : 'dashboardGaugeContainer',
+            minValue               : 0,
+            maxValue               : 100,
+            value                  : 0,
+            threshold              : 32,
+            thresholdVisible       : true,
+            animated               : true,
+            title                  : 'Title',
+            unit                   : '°C',
+            subTitle               : 'SubTitle',
+            tickLabelsVisible      : true,
+            shadowsEnabled         : false,
+            gradientLookup         : new GradientLookup([new Stop(0, new Color(255, 0, 0)),
+                                                         new Stop(0.5, new Color(255, 255, 0)),
+                                                         new Stop(1, new Color(0, 255, 0))]),
+            gradientBarEnabled     : true,
+            scalable               : false,
+            width                  : 270,
+            height                 : 200
+        };
+        var simpleParameters = {
+            id                     : 'simpleGauge',
+            parentId               : 'simpleGaugeContainer',
+            minValue               : 0,
+            maxValue               : 100,
+            value                  : 0,
+            threshold              : 32,
+            thresholdVisible       : true,
+            animated               : true,
+            title                  : 'Title',
+            unit                   : '°C',
+            subTitle               : 'SubTitle',
+            tickLabelsVisible      : true,
+            shadowsEnabled         : false,
+            sections               : [new Section({start:  0, stop:  30, color: new Color(255, 0, 0)}),
+                                      new Section({start: 30, stop:  60, color: new Color(255, 255, 0)}),
+                                      new Section({start: 60, stop: 100, color: new Color(0, 255, 0)}),
+            ],
+            scalable               : false,
+            width                  : 270,
+            height                 : 270
+        };
+
+
+        var dashboardGauge;
+        var simpleGauge;
+        function init() {
+            dashboardGauge = new DashboardGauge(dashboardParameters);
+            dashboardGauge.model.foregroundBaseColor = Colors.WHITE;
+            simpleGauge    = new SimpleGauge(simpleParameters);
+            setInterval(function() {
+                dashboardGauge.model.value = Math.random() * 100;
+                simpleGauge.model.value    = Math.random() * 100;
+            }, 3000);
+        }
+    </script>
+</head>
+<body onload='init()' bgcolor="#000000">
+    <table>
+        <tr>
+            <td><div id='dashboardGaugeContainer' style='padding:10px;'></div></td><td><div id='simpleGaugeContainer' style='padding:10px;'></div></td>
+        </tr>
+    </table>
+</body>
+</html>
